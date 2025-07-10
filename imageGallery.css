@@ -1,0 +1,305 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  text-align: center;
+  height: 100vh;
+}
+
+#header {
+  padding: 10px 10px 0 10px;
+  background-color: #f9f9f9;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#main_hd {
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  align-content: center;
+  background-color: rgb(92, 214, 255);
+  text-decoration: underline overline;
+  text-underline-offset: 10px;
+  text-shadow: 3px 3px 3px gray;
+  border-radius: 1rem;
+  border-bottom: 1.5px solid rgb(159, 255, 16);
+}
+
+#home_page {
+  height: 68vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin-bottom: 7rem;
+}
+
+#filter-menu-icon {
+  display: none;
+  height: 2rem;
+  width: 2.5rem;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+  background-color: rgb(202, 202, 202);
+  border: 1.5px solid gray;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+#filter-menu-icon:hover {
+  background-color: rgb(173, 173, 173);
+}
+
+#filter_menu {
+  height: 100%;
+  width: 13rem;
+  font-size: 1.57rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: start;
+  gap: 1rem;
+  padding-bottom: 5rem;
+  margin-right: 1rem;
+  background-color:rgb(229, 244, 250);
+  border-top: 1.33px solid darkgray;
+  border-radius: 1rem;
+  overflow: auto;
+  scrollbar-width: none;
+  z-index: 7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#filter-sticky-bar {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  background-color: lemonchiffon;
+  font-size: large;
+  justify-content: end;
+  position: sticky;
+  top: 0;
+  z-index: 7;
+}
+
+#filter-info-bar {
+  flex: 1;
+  align-content: center;
+}
+
+#filter-cross-mark {
+  display: none;
+  width: 15%;
+  font-size: x-large;
+  color: rgba(128, 128, 128, 0.724);
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+  align-content: center;
+  cursor: pointer;
+}
+#filter-cross-mark:hover {
+  background-color: rgb(206, 202, 166);
+}
+
+.filter-item {
+  height: 10rem;
+  width: 10rem;
+  color: white;
+  align-content: center;
+  object-fit: cover;
+  text-shadow: 3px 3px 1.5px black;
+  border-style: groove;
+  border-radius: 50%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+.filter-item:hover {
+  transform: scale(1.05);
+  text-decoration: overline;
+  filter: drop-shadow(8px 8px 10px black) brightness(93%);
+}
+
+#filter-1 {
+  background: url("https://media.istockphoto.com/id/518461338/photo/collage-of-european-travel-photos.jpg?s=612x612&w=0&k=20&c=uoQ9ZqskqM6UTN9m06JweY1X9cFc2OCm2oO8YC5Q8TU=");
+}
+
+#filter-2 {
+  background: url("https://images.unsplash.com/photo-1711646899255-fc8560566ffe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D");
+}
+
+#filter-3 {
+  background: url("https://images.unsplash.com/photo-1529234774845-b90fd07f1d23?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNpdHklMjBsaWdodHN8ZW58MHx8MHx8fDA%3D");
+}
+
+#filter-4 {
+  background: url("https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlvbnxlbnwwfHwwfHx8MA%3D%3D");
+}
+
+#filter-5 {
+  background: url("https://media.istockphoto.com/id/1147252758/photo/healthy-vegetarian-food-background-vegetables-pesto-and-lentil-curry-with-tofu.webp?a=1&b=1&s=612x612&w=0&k=20&c=hNf6d-B7WT8WpUq1O9z-S5JNW4T8NB9Jj3KavSJCkP0=");
+}
+
+#filter-6 {
+  background: url("https://images.unsplash.com/photo-1429041966141-44d228a42775?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpZGdlc3xlbnwwfHwwfHx8MA%3D%3D");
+}
+
+.gallery {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1rem;
+  padding-bottom: 5rem;
+  background-color: rgb(255, 234, 237);
+  border-top: 1.33px solid darkgray;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  scroll-margin-inline:10;
+  scrollbar-width: none;
+  /* scrollbar-color: #aeaeae transparent; */
+}
+
+/* .gallery:hover {
+  scrollbar-color: #aeaeaead transparent;
+} */
+
+#image-info-sticky-bar {
+  height: 3rem;
+  width: 100%;
+  background-color: lemonchiffon;
+  font-size: large;
+  align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.gallery-item {
+  width: 18.75rem;
+  height: 49%;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  overflow: auto;
+  scroll-padding-block-start: 10%;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+  filter: brightness(80%);
+}
+
+#last {
+  height: 12rem;
+  width: 100%;
+  border-top: 0.5px solid rgb(111, 111, 111);
+  background-color: rgba(105, 105, 105, 0.249);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#prev, #next {
+  height: 2rem;
+  width: 3rem;
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  padding: 0 0 2.4rem 0;
+  user-select: none;
+}
+#prev { 
+  left: 6.5rem; 
+}
+#next { 
+  right: 6.5rem;
+}
+#prev:hover,  #next:hover {
+  background-color: dimgrey;
+  border-radius: 30%;
+}
+
+@media (max-width: 930px) {
+  .gallery-item {
+    width: 45%;
+  }
+}
+@media (max-width: 770px) {
+  .gallery-item {
+    width: 70%;
+  }  
+}
+@media (max-width: 660px) {
+  #filter_menu {
+    display: none;
+  }
+  #filter-menu-icon {
+    display: inline;
+  }
+  .gallery-item {
+    width: 43.5%;
+    height: 43%;
+  }
+  #prev {
+    left: 1rem;
+  }
+  #next {
+    right: 1rem;
+  }
+}
+@media (max-width: 580px) {
+  #filter-menu-icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    line-height: 1.5rem;
+    font-size: 2.3rem;
+  }
+  .gallery-item {
+    height: 36%;
+  }
+}
+@media (max-width: 500px) {
+  .gallery-item {
+    height: 45%;
+    width: 80%;
+  }  
+}
+@media (max-width: 400px) {
+  .gallery-item {
+    height: 38%;
+  }
+}
+@media (max-width: 340px) {
+  .gallery-item {
+    height: 35%;
+  }  
+}
+@media (max-width: 310px) {
+  .gallery-item {
+    height: 30%;
+  }  
+}
+@media (max-width: 280px) {
+  .gallery-item {
+    height: 25%;
+  }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="icon" href="https://media.istockphoto.com/id/518461338/photo/collage-of-european-travel-photos.jpg?s=612x612&w=0&k=20&c=uoQ9ZqskqM6UTN9m06JweY1X9cFc2OCm2oO8YC5Q8TU=">
+    <link rel="stylesheet" href="imageGallery.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="main_hd" title="Explore this beautiful image gallery"></h1>
+      <hr>
+    </div>
+    
+    <div id="home_page">
+      <div id="filter-menu-icon" title="Try filters">&equiv;</div>
+
+      <!-- Filter page -->
+      <div id="filter_menu" title="Try filter">
+        <div id="filter-sticky-bar">
+          <span id="filter-info-bar"><b>~~~&sect;</b><b>&nbsp;Filters&nbsp;</b><b>&sect;~~~</b></span>
+          <span id="filter-cross-mark" title="Close filters">&times;</span>
+        </div>
+        <div id="filter-1" class="filter-item" title="Try it" onclick="filterImages('all')"><b>ALL</b></div>
+        <div id="filter-2" class="filter-item" title="Try it" onclick="filterImages('nature')"><b>Nature</b></div>
+        <div id="filter-4" class="filter-item" title="Try it" onclick="filterImages('animals-&-birds')"><b>Animals & Birds</b></div>
+        <div id="filter-3" class="filter-item" title="Try it" onclick="filterImages('city')"><b>City</b></div>
+        <div id="filter-5" class="filter-item" title="Try it" onclick="filterImages('food')"><b>Food</b></div>
+        <div id="filter-6" class="filter-item" title="Try it" onclick="filterImages('architecture')"><b>Architecture</b></div>
+        <div id="filter-7" class="filter-item" title="Try it" style="display: none;"></div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="gallery">
+        <div id="image-info-sticky-bar" title="scroll for more images"><b>~~~&sect;</b><b>&nbsp;Images&nbsp;</b><b>&sect;~~~</b></div>
+
+        <!-- City -->
+        <img src="https://www.fodors.com/wp-content/uploads/2019/07/UltimateSydney__HERO_iStock-646880230.jpg" class="gallery-item city">
+        <img src="https://images7.alphacoders.com/716/thumb-1920-716104.jpg" class="gallery-item city">
+        <img src="https://cdn.audleytravel.com/2531/1808/79/1022015-sydney.jpg" class="gallery-item city">
+        <img src="https://content.r9cdn.net/rimg/dimg/43/4b/72c43e11-city-2258-16e22333599.jpg?width=1440&height=810&xhint=1308&yhint=1560&crop=true" class="gallery-item city">
+        <img src="https://www.fodors.com/wp-content/uploads/2019/06/00_AFirstTimersGuidetoSydney__HERO_HERO-166763-56.jpg" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1580895456895-cfdf02e4c23f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2l0eSUyMG5pZ2h0fGVufDB8fDB8fHww" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1503432697506-6986abec65ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNpdHklMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1641384687365-cec6c0211ecc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2l0eSUyMG5pZ2h0JTIwbmF0dXJlfGVufDB8fDB8fHww" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1529619768328-e37af76c6fe5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2l0eSUyMG5pZ2h0fGVufDB8fDB8fHww" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1504326008149-71dbc00aa3ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2l0eSUyMG5pZ2h0fGVufDB8fDB8fHww" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1575380591643-b2c92368dc6d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNpdHklMjBza3lsaW5lfGVufDB8fDB8fHww" class="gallery-item city">
+        <img src="https://media.istockphoto.com/id/465865644/photo/aerial-view-of-pune-city-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=eEmMh9RlgX_Iul6H5m61YkGce32rfv4eWbaI_1NE0XA=" class="gallery-item city">
+        <img src="https://media.istockphoto.com/id/539018660/photo/taj-mahal-hotel-and-gateway-of-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=egndJzhyZQimV9AtYRdQsTd1XrH0h0-AgZJvShxxQ5A=" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1446726393226-86e252d674c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNpdHklMjBza3lsaW5lfGVufDB8fDB8fHww" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1544214036-5aaeb9e32d11?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNpdHklMjBza3lsaW5lfGVufDB8fDB8fHww" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdHklMjBza3lsaW5lfGVufDB8fDB8fHww" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1549654747-1fe362f45d7b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNpdHklMjBzdHJlZXR8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1512920115544-d149d1dedcb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNpdHklMjBzdHJlZXR8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1453413453658-27fec8f43f29?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2l0eSUyMHN0cmVldHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item city">
+        <img src="https://media.istockphoto.com/id/2161497273/photo/man-exploring-jaisalmer-old-town-inside-fort-with-gift-shops-and-old-architecture.webp?a=1&b=1&s=612x612&w=0&k=20&c=Z9vTwFoh5-xl8B3hynFXN0qfCDd4hAKXrQ-5rqmbes8=" class="gallery-item city">
+        <img src="https://www.roadaffair.com/wp-content/uploads/2020/03/rocks-sydney-australia-shutterstock_555613081.jpg" class="gallery-item city">
+        <img src="https://media.istockphoto.com/id/1416056985/photo/cycling-commute-in-amsterdam-the-netherlands.webp?a=1&b=1&s=612x612&w=0&k=20&c=6nfBXoyq0bNjh5o7Pt40l6yGvPobU_964SlXEJBrs8Q=" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1651332609816-1a253a45565a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2l0eSUyMHN0cmVldHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1518729406574-12149251ac0c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2l0eSUyMHN0cmVldHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1571951103752-53c15cad28e5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdHklMjBsaWdodHN8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1529234774845-b90fd07f1d23?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNpdHklMjBsaWdodHN8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+        <img src="https://plus.unsplash.com/premium_photo-1661908853318-893732a14e42?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2l0eSUyMGxpZ2h0c3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1495709276535-bb4928b7b233?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fGNpdHklMjBsaWdodHN8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+        <img src="https://wallpapercave.com/wp/wp2684730.jpg" class="gallery-item city">
+        <img src="https://plus.unsplash.com/premium_photo-1697730182538-406cbc7789d4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODF8fGNpdHklMjBsaWdodHN8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1476054738960-e97a1eb3ba40?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fGNpdHklMjBsaWdodHN8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1549772262-a128a0224ea5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGNpdHklMjBsaWdodHN8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1517886877123-e4a01ac527ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGNpdHklMjBsaWdodHN8ZW58MHx8MHx8fDA%3D" class="gallery-item city">
+
+        <!-- Nature -->
+        <img src="https://images.unsplash.com/photo-1659724546557-3620b0a2bcd1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fG5hdHVyZSUyMHdhdGVyfGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1660572278092-67b3e3ff6f31?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzA5fHxuYXR1cmUlMjB3YXRlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://content.paulreiffer.com/wp-content/uploads/2020/01/Milford-Sound-Daytime-Reflection-Mitre-Peak-Long-Exposure-Paul-Reiffer-Phase-One-Medium-Format-Landscape-Photographer-Summer-Green-Hills@2x.jpg" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1501786223405-6d024d7c3b8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG5hdHVyZSUyMG1vdW50YWlufGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1711049689013-058802d15035?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHxuYXR1cmUlMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >          
+        <img src="https://images.unsplash.com/photo-1709207035188-1e31908e4b33?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fG5hdHVyZSUyMG1vdW50YWlufGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1660248566520-c94e7bcf2f46?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fG5hdHVyZSUyMG1vdW50YWlufGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1649861775214-e16439cdc757?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc4fHxuYXR1cmUlMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1609972844913-e3308fde41d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg5fHxuYXR1cmUlMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1745324174980-7fdd1a3395fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg2fHxuYXR1cmUlMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1657464363478-c5c120610baf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZSUyMHJpdmVyfGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1626594995085-36b551227b9a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fG5hdHVyZSUyMHJpdmVyfGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1692729623887-5a417c3f209f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYxfHxuYXR1cmUlMjByaXZlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1721409744448-699188be9ce8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU3fHxuYXR1cmUlMjByaXZlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1695469107292-789742e3f24a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ3fHxuYXR1cmUlMjByaXZlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1574595407066-b31748445148?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM4fHxuYXR1cmUlMjByaXZlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1568078321519-e1509a156b38?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fG5hdHVyZSUyMHJpdmVyfGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://plus.unsplash.com/premium_photo-1700182582584-7411ec09675e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG5hdHVyZSUyMHJpdmVyfGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1581551431863-b13a7c369eb1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fG5hdHVyZSUyMHJpdmVyfGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1458966480358-a0ac42de0a7a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlJTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1420593248178-d88870618ca0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlJTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1422393682802-921122338109?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1580225519960-ec8879555f59?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1743195955251-c926fb68b78f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxuYXR1cmUlMjB0cmVlfGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1486140888658-c4052ffc7eab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMzfHxuYXR1cmUlMjB0cmVlfGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1583525957866-ea1cdcb4f46a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1711700729684-feebab28c5d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1651859057261-1331f9ede48a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1681060308666-af91723aa6e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1656874370240-c67aeb8bd048?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1711646899255-fc8560566ffe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1543998896-48239bd0eb92?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fG5hdHVyZSUyMHRyZWV8ZW58MHx8MHx8fDA%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlJTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1673321845387-95dbc90264c8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlJTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1626160692933-845c9424e1f0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG5hdHVyZSUyMGdyZWVubGFuZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1567100914814-aae27c693122?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG5hdHVyZSUyMGdyZWVubGFuZCUyMHBsYWlufGVufDB8fDB8fHww" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1670261487423-21180b6fdc34?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHxuYXR1cmUlMjBncmVlbmxhbmQlMjBwbGFpbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item nature" >
+        <img src="https://images.unsplash.com/photo-1594073458654-32e41038c07b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fG5hdHVyZSUyMGdyZWVubGFuZCUyMHBsYWlufGVufDB8fDB8fHww" class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1684415380830-e76371b1e601?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fG5hdHVyZSUyMGdyZWVubGFuZCUyMHBsYWlufGVufDB8fDB8fHww" class="gallery-item nature">
+
+        <!-- Animals & Birds -->
+        <img src="https://media.istockphoto.com/id/108126645/photo/asiatic-lion.webp?a=1&b=1&s=612x612&w=0&k=20&c=eDEmzjnfzl7Hl5jI27uKacNTsQh693nXysZQXRWMxdg=" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlvbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item  animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxpb258ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1512614521719-2806f69d406b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJvYXJpbmclMjBsaW9ufGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1698765096823-7d31628915f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHJvYXJpbmclMjBsaW9ufGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1741200024018-fae42e20269c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fHJvYXJpbmclMjBsaW9ufGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1661857868021-d219199763b4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHxyb2FyaW5nJTIwbGlvbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1661848168757-889335a08555?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMzfHxyb2FyaW5nJTIwbGlvbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1718435126504-1de9f5b5c17e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY4fHxyb2FyaW5nJTIwbGlvbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1615926380022-e4d545fd053c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA0fHxyb2FyaW5nJTIwbGlvbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1664304474148-2a1c02c75b13?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg5fHxyb2FyaW5nJTIwbGlvbnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://media.istockphoto.com/id/483080419/photo/tiger-shows-his-thooth-to-spit.webp?a=1&b=1&s=612x612&w=0&k=20&c=xGTUheUMl43qo9oIXeaRvgV1qYHMSQAiQ2BoQjxnCfA=" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1648712553154-04e475e60183?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9hcmluZyUyMHRpZ2VyfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1702808855442-1208f7c0538c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJvYXJpbmclMjB0aWdlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1702293320445-b2e8c9e88976?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJvYXJpbmclMjB0aWdlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1622655986735-cbe52bae7f15?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvYXJpbmclMjB0aWdlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1661963643193-8bedab8db800?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fHJvYXJpbmclMjB0aWdlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1664304265428-eb499ac7ac71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxyb2FyaW5nJTIwdGlnZXJ8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1697697342352-426dcdbba5dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE1fHxyb2FyaW5nJTIwdGlnZXJ8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1603524812084-2e1b1b9704c7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHJvYXJpbmclMjB0aWdlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1567360615751-58281b426a5a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fHJvYXJpbmclMjB0aWdlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1704989814821-c054b433804b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fHJvYXJpbmclMjB0aWdlcnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1566113151183-3b5e21675b90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fG5hdHVyZSUyMGdyZWVubGFuZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1444212477490-ca407925329e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1666229410352-c4686b71cea2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1601758176481-e81a6b713126?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1533404367653-794d4cecb66c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1671660531226-d540865020d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1562054438-f127502ea154?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1675431318990-710f8adf1e96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1667382052117-bab5f55098e5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUzfHxkb2dzfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1729111977815-a4f64ea98416?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQxfHxkb2dzfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1711955894472-687fc4f22cad?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIyfHxkb2dzfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1650062417211-da0731b270de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxkb2dzfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1540411003967-af56b79be677?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxkb2dzfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1489417139533-915815598d31?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1470208564179-dd5b52a0d010?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1718271723780-6915b0d4e00e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1505623547966-8af2af3515ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1664573931626-b77fb8c0c124?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGRvZ3N8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0JTIwYW5kJTIwZG9nfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1547623542-de3ff5941ddb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhdCUyMGFuZCUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1509205477838-a534e43a849f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhdCUyMGFuZCUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1669891285996-68c6464a6d26?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhdCUyMGFuZCUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1571324524859-899fbd151860?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGNhdCUyMGFuZCUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1626735761613-a8d7a3cdfe10?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGNhdCUyMGFuZCUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1626103989191-05f5e081e0bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxyb2FyaW5nJTIwdGlnZXJ8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1719985970253-1fcf9d2b1d79?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGNhdCUyMGFuZCUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://media.istockphoto.com/id/2162167550/photo/flock-of-birds-above-river-in-new-delhi.webp?a=1&b=1&s=612x612&w=0&k=20&c=AYEYo6J0RJYkWOszDIKaLL629PT8kKrbBEz-83TpfpQ=" class="gallery-item animals-&-birds" >
+        <img src="https://media.istockphoto.com/id/2180684310/photo/black-headed-bunting-emberiza-melanocephala-nal-sarovar-bird-sanctuary-gujarat-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=VR3y-debS8ehuh7pcTHFOY2zC3oCryT0JAzI6ikpO6M=" class="gallery-item animals-&-birds" >
+        <img src="https://media.istockphoto.com/id/183412466/photo/eastern-bluebirds-male-and-female.webp?a=1&b=1&s=612x612&w=0&k=20&c=JUCOERTWv4Pl56KcNfVLaAVBrncwugHEhTYI8zl-d7g=" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1675714692342-01dfd2e6b6b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1486365227551-f3f90034a57c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1674487959493-8894cc9473ea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1550853024-fae8cd4be47f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1555169062-013468b47731?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1539664030485-a936c7d29c6e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1520808663317-647b476a81b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1669279284400-bcdd8dbdbd55?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1666777246899-053e06efdb35?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1591055749071-927e6ddffc82?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1517963456365-467383f3b64a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1484704324500-528d0ae4dc7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1674487959529-7d4377c54737?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODl8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1523115191856-c203e76215a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1533149335914-0a955b468338?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1687880581816-63655cf5cd27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1433888376991-1297486ba3f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI3fHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1507126882445-434b04530d1a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcyfHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1549997380-591bf8f652ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg4fHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1526356378313-2fd2b55eb865?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQwfHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1608584808621-e8fce62d9318?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjM1fHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1580980407668-6bb45a674180?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIyfHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1589810007796-1bf48a9a0889?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE2fHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1557401622-cfc0aa5d146c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAyfHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1575805774658-fdb9eeda71cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAzfHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://plus.unsplash.com/premium_photo-1694270553677-22680efa4d56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk3fHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds" >
+        <img src="https://images.unsplash.com/photo-1593069310094-080326c950a1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgyfHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1512988442538-a42600ac4634?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgwfHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1571391281715-092bfa58fa46?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU2fHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds">
+        <img src="https://plus.unsplash.com/premium_photo-1697263583183-c18b646d3aa3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIxfHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1553264701-d138db4fd5d4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI2fHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1549586073-f4c3b7ff044a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxiaXJkfGVufDB8fDB8fHww" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1536514900905-0d5511b9d489?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1531275467514-94da595cf8d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGJpcmR8ZW58MHx8MHx8fDA%3D" class="gallery-item animals-&-birds">
+        <img src="https://media.istockphoto.com/id/2192157796/photo/sri-lankan-elephant-sigiriya-rock-on-the-background-sri-lanka.webp?a=1&b=1&s=612x612&w=0&k=20&c=I4SD4KEylsH1rApiT2xmdwmevTXZkK6QgAGNUBodMOE=" class="gallery-item animals-&-birds" >
+        <img src="https://media.istockphoto.com/id/536676650/photo/wild-elephant-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=HFgahoWCjTl1RKJ7WPL-cBERc7GBYene4RQyQpD9S_s=" class="gallery-item animals-&-birds">
+        <img src="https://plus.unsplash.com/premium_photo-1661861726461-d62b9ac2cb77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGVsZXBoYW50c3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds">
+        <img src="https://plus.unsplash.com/premium_photo-1661950072324-96d988d266c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGVsZXBoYW50c3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1528732533941-ffd7083d5dfe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGVsZXBoYW50c3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1534545872802-0579930815c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGVsZXBoYW50c3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds">
+        <img src="https://images.unsplash.com/photo-1587372653831-820c40aa336d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGVsZXBoYW50c3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item animals-&-birds">
+
+        <!-- Food -->
+        <img src="https://images.unsplash.com/photo-1600850056064-a8b380df8395?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item food" >
+        <img src="https://images.unsplash.com/photo-1631311695255-8dde6bf96cb5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item food" >
+        <img src="https://images.unsplash.com/photo-1604085804781-04a7d1adba36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmVnYW4lMjBmb29kfGVufDB8fDB8fHww" class="gallery-item food" >
+        <img src="https://images.unsplash.com/photo-1669544695328-c2a61f9382e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmVnYW4lMjBmb29kfGVufDB8fDB8fHww" class="gallery-item food" >
+        <img src="https://plus.unsplash.com/premium_photo-1664647731578-5dcc62390ea9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmVnYW4lMjBmb29kfGVufDB8fDB8fHww" class="gallery-item food" >
+        <img src="https://media.istockphoto.com/id/1097478652/photo/vegan-chana-alu-masala.webp?a=1&b=1&s=612x612&w=0&k=20&c=p4odO_q5VWK7ygBv7U8g1a4iApRrApuYu1v67gpYP3E=" class="gallery-item food" >
+        <img src="https://media.istockphoto.com/id/2212836819/photo/indian-veg-biryani-veg-pulav-indian-vegetable-pulav-biriyani-vegetable-biriyani-served-in-a.webp?a=1&b=1&s=612x612&w=0&k=20&c=bZcqDkHE3n-8zDn9sxkG1q1sVvwJmZP21wKtSq6M278=" class="gallery-item food" >
+        <img src="https://media.istockphoto.com/id/1206034580/photo/woman-having-food-potato-curry-with-chapatti-on-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=Px8l40UIUC7OtR4H5TDjBzhcMffs4BgIdFKOfpLk6hE=" class="gallery-item food" >
+        <img src="https://media.istockphoto.com/id/2156176767/photo/mango-chia-seed-pudding-vertical-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=DcQAx_eJ7cZnxu9yz5l5MiEnyMvTOYeVtyLc5P9gyHM=" class="gallery-item food" >
+        <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnYW4lMjBwaXp6YXxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item food" >
+        <img src="https://images.unsplash.com/photo-1635832801146-102d3bb7f88e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHZlZ2FuJTIwcGl6emF8ZW58MHx8MHx8fDA%3D" class="gallery-item food" >
+        <img src="https://media.istockphoto.com/id/1955855012/photo/vegetarian-pizza-with-broccoli-cherry-tomato-pepper-and-mushrooms.webp?a=1&b=1&s=612x612&w=0&k=20&c=c3AGLDad2loOtOHELSJzWWsB0ArM7tTSPyZ0nxRn-pg=" class="gallery-item food" >
+        <img src="https://media.istockphoto.com/id/1359499287/photo/vegan-food-served-as-vegan-beet-burgers.webp?a=1&b=1&s=612x612&w=0&k=20&c=9wOxP_q7ds7gdT0UVAz3pKgvz-5PtEw479_itGK9rig=" class="gallery-item food" >
+        <img src="https://images.unsplash.com/photo-1592415499556-74fcb9f18667?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHZlZ2FuJTIwYnVyZ2VyfGVufDB8fDB8fHww" class="gallery-item food" >
+        <img src="https://media.istockphoto.com/id/1480628273/photo/woman-eating-veggie-salad-and-burger-with-vegan-word-on-small-flag-in-a-veggie-restaurant-or.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZHNtM7NsFJPI3xqVM61rud-qsUxRQYSWi8Xca303oUk=" class="gallery-item food">
+        <img src="https://images.unsplash.com/photo-1662116802109-9dce63857aab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHZlZ2FuJTIwYnVyZ2VyfGVufDB8fDB8fHww" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1151268627/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.webp?a=1&b=1&s=612x612&w=0&k=20&c=u_SRSLp0MMbxeYok1rRcnk-ydqNo67E4KjuyXyKlxJs=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1420045123/photo/healthy-sprout-salad-with-mung-bean-sprout-chopped-onion-tomato-and-boiled-potato.webp?a=1&b=1&s=612x612&w=0&k=20&c=EBqY3qfp1d0M-IkWktCJPkbMcBaQ7a4U3rIKBCiURX4=" class="gallery-item food">
+        <img src="https://images.unsplash.com/photo-1692194740974-21e59c3bbbea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHZlZ2FuJTIwc2FsYWR8ZW58MHx8MHx8fDA%3D" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1147252758/photo/healthy-vegetarian-food-background-vegetables-pesto-and-lentil-curry-with-tofu.webp?a=1&b=1&s=612x612&w=0&k=20&c=hNf6d-B7WT8WpUq1O9z-S5JNW4T8NB9Jj3KavSJCkP0=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1255426185/photo/delicious-chocolate-zucchini-brownies.webp?a=1&b=1&s=612x612&w=0&k=20&c=OqZJynUI-XeSt2QK3HzZlWJjp62nkZhXuxqlA1OZpdI=" class="gallery-item food">    
+        <img src="https://media.istockphoto.com/id/1366287475/photo/homemade-oven-baked-donut-dona-full-vegan-recipe-pland-based-wit.webp?a=1&b=1&s=612x612&w=0&k=20&c=ewAe6-PbzqwxHXrsFlw7VV7ZQW5JJozXNY-uRUYshlM=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1401571789/photo/kesar-angoori-petha.webp?a=1&b=1&s=612x612&w=0&k=20&c=-2QSmpmSvZIDzPyi_TL6uA6KpZOPz2Ty6_fkLkEllHE=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1255579403/photo/close-up-image-of-homemade-chocolate-cupcakes-topped-with-piped-chocolate-icing-frosting-dark.webp?a=1&b=1&s=612x612&w=0&k=20&c=65psYUvRwBlHuF9uAaynimilzRDeZ97voX-5WkSqWXE=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1137312508/photo/assortment-of-products-with-high-sugar-level.webp?a=1&b=1&s=612x612&w=0&k=20&c=XOFA1_Ffx-0xDTg35DoLPJfU49uWPZUCf8rNChdPOgs=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1140646840/photo/mother-giving-healthy-vegan-dessert-snacks-to-toddler-child-concept-of-healthy-sweets-for.webp?a=1&b=1&s=612x612&w=0&k=20&c=pVGywP5WaiSnz9n55dmjH2MYAimwskSDJ5CVzoycW6w=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1314329942/photo/goal-gappa-or-pani-puri.jpg?s=612x612&w=0&k=20&c=l6akiKMfTLE9nR4VonhiOZpZGDY4aEjimAN-BSskF-A=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/2156778972/photo/luchi-or-puri-and-mutton-curry-or-laal-maas-served-on-earthen-plate-luchi-is-indian-flatbread.jpg?s=612x612&w=0&k=20&c=xja0UBzHBovG6jI1TuLPQX2y-NGNSs70Vwj_cPxLY6M=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/1716169737/photo/navratri-upwas-thali-fasting-recipes-or-indian-food-platter.jpg?s=612x612&w=0&k=20&c=Y1idOu2Txdg3jsJnAS8r89VE5S6J2htA6id6ufygPKo=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/186087388/photo/thali-with-rice-and-vegetables-on-green-painted-wooden-table.jpg?s=612x612&w=0&k=20&c=XSo8ePZ8Iy3Y1JGPK68uEmMeTx9S6tkTFaqTbsBc-no=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/2161423001/photo/puri-and-choley.jpg?s=612x612&w=0&k=20&c=ysDT36PDcYq9zCl137h1MBGBe0-tyNc6cKy68Wjcg7A=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/483405040/photo/south-indian-meals-on-banana-leaf.jpg?s=612x612&w=0&k=20&c=WUFvAWQgxT44QW1JHS5c_QiB_RDf2hkR2hf4Kpk_lzA=" class="gallery-item food">
+        <img src="https://media.istockphoto.com/id/491725631/photo/indian-bananas.jpg?s=612x612&w=0&k=20&c=xFpLDaKPDL2dVTh_O-GmpEp-WznDRBaVO4pdXj9jN2M=" class="gallery-item food">
+
+        <!-- Architecture -->
+        <img src="https://media.istockphoto.com/id/508184291/photo/office-buildings-in-financial-district-la-defense-paris-france.webp?a=1&b=1&s=612x612&w=0&k=20&c=cwRduaCCqZxdLDNT9BYKgHijkxB8zfJkvlKAc6SXg-w=" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/168620608/photo/skyline-of-a-city-of-skyscrapers.webp?a=1&b=1&s=612x612&w=0&k=20&c=O9HRbFp3bmZzgzTVBoNNgwbR0tubTJaGbZsZi2tOloA=" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1aWxkaW5nfGVufDB8fDB8fHww" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnVpbGRpbmd8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1508062878650-88b52897f298?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJ1aWxkaW5nfGVufDB8fDB8fHww" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1433832597046-4f10e10ac764?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnVpbGRpbmd8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1512403754473-27835f7b9984?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1aWxkaW5nfGVufDB8fDB8fHww" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1527576539890-dfa815648363?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1aWxkaW5nfGVufDB8fDB8fHww" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1aWxkaW5nfGVufDB8fDB8fHww" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/184085544/photo/indian-parliament-in-new-delhi-the-politic-government-of-india.jpg?s=612x612&w=0&k=20&c=jgnuN5ofwNGMaoVoMoXOLF-2OzRVj3QhD0IZD3HIUSg=" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/531864277/photo/bandra-worli-sea-link.jpg?s=612x612&w=0&k=20&c=3nie1Z_A19UOk57G0I-IVsrpSlU-5KTsDbzRTRhOEMc=" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/1398087835/photo/pink-palace-hawa-mahal-jaipur-india-beautiful-sunset-view.jpg?s=612x612&w=0&k=20&c=S8X6bk4Mdp0xu624dFZCHfobotdwdIp7K1FEQJV6hkI=" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/1326289390/photo/luxury-house-in-modern-design-green-grass-lawn-at-vacation-home.jpg?s=612x612&w=0&k=20&c=2lAdLBXpgfDuCTDYWnjfgCey8h4fYlMDte7Yid1TJXA=" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/154890740/photo/indian-rural-school.jpg?s=612x612&w=0&k=20&c=3IA7R4Ijhjofscb_gkr9djDRH9ujxJo1RuuJExTswoM=" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/2206886648/photo/skyscraper-building-architecture-of-times-square-street-of-manhattan-new-york.jpg?s=612x612&w=0&k=20&c=jJJYepnve3pSjtNmotYZ6aJlQH1XgpnUZ7Qus9Po33A=" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/169974076/photo/working-on-a-reinforcing-bar-structure.jpg?s=612x612&w=0&k=20&c=voY84BFAfwVsCJQhtV6aUNOsczrpF638qXEm758O5tc=" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFyY2hpdGVjdHVyZXxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item architecture" >
+        <img src="https://plus.unsplash.com/premium_photo-1686090450346-f418fff5486e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFyY2hpdGVjdHVyZXxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item architecture" >
+        <img src="https://media.istockphoto.com/id/184911728/photo/ornate-door-in-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=7jrQdXthTUn683BqO7YKbvOwzHW6vnNrw-JgQN2nGDE=" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1429041966141-44d228a42775?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpZGdlc3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1516176966905-58371240ba28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnJpZGdlc3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnJpZGdlc3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1522775559573-2f76d540932b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnJpZGdlc3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1450149632596-3ef25a62011a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJyaWRnZXN8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1542907299-8bd21f11f540?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyaWRnZXN8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1505832018823-50331d70d237?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJyaWRnZXN8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1465021696408-57e53e164d0e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJyaWRnZXN8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1477288309209-a14ce05a641e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJyaWRnZXN8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1551534476-5ce76ce38637?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJyaWRnZXN8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://plus.unsplash.com/premium_photo-1682056762907-23d08f913805?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YnJpZGdlc3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-item architecture">
+        <img src="https://media.istockphoto.com/id/540129900/photo/living-root-bridges-in-nongriat-meghalaya-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=9D9rFusPzjjH4XcoNnTvpQX3uk2Yjyff6go04lPPK9w=" class="gallery-item architecture">
+        <img src="https://media.istockphoto.com/id/628916454/photo/london-tower-bridge-illuminated-at-sunset-over-river-thames-panorama.webp?a=1&b=1&s=612x612&w=0&k=20&c=AI-TlA_VfcqFSsD4RCLc57NJPI15UPWOUw9FvOEf-bc=" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1434873740857-1bc5653afda8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dG93ZXJ8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://media.istockphoto.com/id/183033488/photo/rajabai-clock-tower-in-mumbai.webp?a=1&b=1&s=612x612&w=0&k=20&c=gvi0-ViqNiKmiMyK__6O9ToxzejHz4I9yCGfQcbPWfY=" class="gallery-item architecture">
+        <img src="https://media.istockphoto.com/id/502126900/photo/antennas.webp?a=1&b=1&s=612x612&w=0&k=20&c=xwdGTlNS0i5IU1v4tXEgKTVzySsCU6-ci0H5bt5Qou0=" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1603489243462-58c25be82b9d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHRvd2VyfGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG93ZXJ8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1629419566667-1a7b044b7deb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG93ZXJ8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://plus.unsplash.com/premium_photo-1664299326174-f73b66496733?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dG93ZXJ8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1454793147212-9e7e57e89a4f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRvd2VyfGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1526546334624-2afe5b01088d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRvd2VyfGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1555883006-37d106604feb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG93ZXJ8ZW58MHx8MHx8fDA%3D" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1601534621851-c19ba5464244?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRvd2VyfGVufDB8fDB8fHww" class="gallery-item architecture" >
+        <img src="https://images.unsplash.com/photo-1517009572053-93fb56dfef49?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRvd2VyfGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1603113718025-b6e71c7ff83e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRvd2VyfGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZXJufGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://plus.unsplash.com/premium_photo-1661962943616-c7267613bcf7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bW9kZXJufGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9kZXJufGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1481535668376-4c3ab7d84e7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG1vZGVybnxlbnwwfHwwfHx8MA%3D%3D" class="gallery-item architecture">
+        <img src="https://plus.unsplash.com/premium_photo-1681487675360-e4125238d519?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9kZXJufGVufDB8fDB8fHww" class="gallery-item architecture">
+        <img src="https://images.unsplash.com/photo-1479292889369-1a48f234247e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZXJufGVufDB8fDB8fHww" class="gallery-item architecture">
+      </div>
+    </div>
+    <div id="last"></div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span id="prev" class="arrow" title="previous" onclick="changeImage(-1)">&#10094;</span>
+      <img id="lightbox-img" src="">
+      <span id="next" class="arrow" title="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+      
+    <script src="imageGallery.js"></script>
+
+  </body>
+</html>
