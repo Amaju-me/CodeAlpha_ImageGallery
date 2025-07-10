@@ -1,2 +1,3 @@
 # CodeAlpha_ImageGallery
+It's a beautiful Image Gallery...   
 I have built this Project during Frontend internship provided by CodeAlpha
