@@ -159,12 +159,7 @@ body {
   overflow: auto;
   scroll-margin-inline:10;
   scrollbar-width: none;
-  /* scrollbar-color: #aeaeae transparent; */
 }
-
-/* .gallery:hover {
-  scrollbar-color: #aeaeaead transparent;
-} */
 
 #image-info-sticky-bar {
   height: 3rem;
