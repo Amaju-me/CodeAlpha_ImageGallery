@@ -1,3 +1,2 @@
-# CodeAlpha_ImageGallery
-It's a beautiful Image Gallery...   
-I have built this Project during Frontend internship provided by CodeAlpha
+# ImageGallery_Project
+It's a beautiful featured Image Gallery (built with HTML, CSS, JavaScript)
